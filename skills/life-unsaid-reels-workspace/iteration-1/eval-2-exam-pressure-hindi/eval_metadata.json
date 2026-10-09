@@ -1,0 +1,16 @@
+{
+  "eval_id": 2,
+  "eval_name": "exam-pressure-hindi",
+  "prompt": "hinglish mein ek script chahiye - board exam pressure. student roz bolta hai 'haan padh raha hoon' but andar se toot raha hai, aur parents ko lagta hai sab theek hai. give me good 60 sec script using all skills, connectors, plugins",
+  "assertions": [
+    "Hook is 2-3 lines and fits 10-15 seconds",
+    "Full voiceover fits ~60 seconds (Hindi/mixed 180-215 words)",
+    "Voiceover ends with 'Follow Life, Unsaid for more'",
+    "Script is split into scenes, each with its own voiceover and a realistic moving-shot visual description",
+    "Offers two hook options",
+    "Includes 2-3 short, script-specific improvement notes",
+    "Avoids generic openers ('Did you know', 'In today's video', 'In a world where')",
+    "Hindi is in Devanagari with everyday English words left in English letters (the creator's style)",
+    "Visual prompts are written in English"
+  ]
+}

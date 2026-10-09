@@ -1,0 +1,23 @@
+{
+  "skill_name": "life-unsaid-reels",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "make a reel script about a father. the story behind his struggles, behind his hardwork, behind his no emotion look, behind his shoulder lot of responsibilities and commitments, planning for the family. give me good 60 sec script using all skills, connectors, plugins",
+      "expected_output": "One English 60-second script (150-160 words) with two hook options, 6-8 scenes each with VO and a realistic moving-shot visual prompt, a full voiceover block, ending with 'Follow Life, Unsaid for more.', plus 2-3 short improvement notes.",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "hinglish mein ek script chahiye - board exam pressure. student roz bolta hai 'haan padh raha hoon' but andar se toot raha hai, aur parents ko lagta hai sab theek hai. give me good 60 sec script using all skills, connectors, plugins",
+      "expected_output": "A Hindi-English script written the creator's way (Hindi in Devanagari, everyday English words in English letters), 190-205 words, about a student hiding exam pressure from their parents, brand line kept in English as 'Follow Life, Unsaid for more.', visual prompts in English.",
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "me and my college best friend stopped talking 2 years ago after a stupid fight. both of us still watch each other's whatsapp status every single day. stayed in same room without speakin for 1 whole year, feeling frustrated.. nobody texts first. make it about ego and the words we never say. give me good 60 sec script using all skills, connectors, plugins",
+      "expected_output": "An English script told in the first person as the creator's own story (ego, a year of silence in a shared room, watching each other's status), friend kept anonymous, same structure, 150-160 words, with a call to action that may invite viewers to share or text someone before 'Follow Life, Unsaid for more.'",
+      "files": []
+    }
+  ]
+}

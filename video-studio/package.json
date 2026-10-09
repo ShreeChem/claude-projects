@@ -1,0 +1,29 @@
+{
+  "name": "video-studio",
+  "private": true,
+  "type": "module",
+  "description": "Tella recordings + Epidemic Sound music, composed with HyperFrames and finished with FFmpeg.",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "doctor": "node scripts/doctor.mjs",
+    "tella:list": "node scripts/tella-list.mjs",
+    "tella:pull": "node scripts/tella-pull.mjs",
+    "build": "node scripts/build.mjs",
+    "preview": "hyperframes preview edit",
+    "check": "hyperframes check edit",
+    "render": "node scripts/render.mjs",
+    "finish": "node scripts/finish.mjs",
+    "make": "node scripts/build.mjs && node scripts/render.mjs && node scripts/finish.mjs",
+    "reel:build": "node scripts/reel-build.mjs",
+    "reel:check": "hyperframes check reel-edit",
+    "reel:preview": "hyperframes preview reel-edit",
+    "reel:render": "node scripts/render.mjs --reel",
+    "reel:finish": "node scripts/finish.mjs --reel",
+    "reel:make": "node scripts/reel-make.mjs"
+  },
+  "devDependencies": {
+    "hyperframes": "0.8.140"
+  }
+}

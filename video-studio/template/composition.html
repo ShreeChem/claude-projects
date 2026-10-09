@@ -1,0 +1,238 @@
+<!doctype html>
+<!--
+  HyperFrames template for every video. `npm run build` fills the double-brace tokens,
+  drops the "if:" blocks that are switched off, and writes edit/index.html.
+  Change the look here (colours, fonts, animations) — never edit edit/index.html directly.
+  Keep each timed element flat (only <span>/<b>/<br>-style children) so Studio can edit it.
+-->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1920, height=1080" />
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <style>
+      :root {
+        --accent: {{ACCENT}};
+        --ink: #f5f5f7;
+        --bg: #0b0b0f;
+      }
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      html,
+      body {
+        width: 1920px;
+        height: 1080px;
+        overflow: hidden;
+        background: var(--bg);
+      }
+      #root {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        color: var(--ink);
+        font-family: Inter, ui-sans-serif, system-ui, sans-serif;
+      }
+      .layer {
+        position: absolute;
+        inset: 0;
+      }
+
+      /* Footage from Tella */
+      #footage {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        background: #000;
+        z-index: 1;
+      }
+
+      /* Intro title card */
+      #intro {
+        z-index: 5;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0 160px;
+        background:
+          radial-gradient(1100px 700px at 85% 10%, color-mix(in srgb, var(--accent) 38%, transparent), transparent 70%),
+          var(--bg);
+      }
+      #intro .bar {
+        display: block;
+        width: 120px;
+        height: 10px;
+        border-radius: 5px;
+        background: var(--accent);
+        margin-bottom: 44px;
+      }
+      #intro .title {
+        display: block;
+        max-width: 1500px;
+        font-size: 96px;
+        font-weight: 700;
+        line-height: 1.05;
+        letter-spacing: -0.03em;
+      }
+      #intro .subtitle {
+        display: block;
+        margin-top: 28px;
+        font-size: 40px;
+        opacity: 0.72;
+      }
+
+      /* Lower third */
+      #lower-third {
+        z-index: 3;
+      }
+      #lower-third .box {
+        position: absolute;
+        left: 80px;
+        bottom: 150px;
+        padding: 20px 34px;
+        border-radius: 12px;
+        border-left: 8px solid var(--accent);
+        background: rgba(11, 11, 15, 0.86);
+        font-size: 36px;
+        font-weight: 600;
+      }
+
+      /* Captions (one element per line, generated from the Tella transcript) */
+      .caption {
+        z-index: 4;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        padding-bottom: 64px;
+      }
+      .caption span {
+        max-width: 1500px;
+        padding: 14px 30px;
+        border-radius: 12px;
+        background: rgba(0, 0, 0, 0.74);
+        font-size: 46px;
+        font-weight: 600;
+        line-height: 1.25;
+        text-align: center;
+      }
+
+      /* Outro */
+      #outro {
+        z-index: 5;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        background:
+          radial-gradient(1000px 640px at 50% 110%, color-mix(in srgb, var(--accent) 34%, transparent), transparent 70%),
+          var(--bg);
+      }
+      #outro .headline {
+        display: block;
+        font-size: 88px;
+        font-weight: 700;
+        letter-spacing: -0.03em;
+      }
+      #outro .cta {
+        display: block;
+        margin-top: 36px;
+        padding: 18px 40px;
+        border-radius: 999px;
+        background: var(--accent);
+        font-size: 38px;
+        font-weight: 600;
+      }
+      #outro .channel {
+        display: block;
+        margin-top: 40px;
+        font-size: 32px;
+        opacity: 0.65;
+      }
+    </style>
+  </head>
+  <body>
+    <div
+      id="root"
+      data-composition-id="main"
+      data-start="0"
+      data-duration="{{TOTAL}}"
+      data-width="1920"
+      data-height="1080"
+    >
+      <!-- if:intro -->
+      <div id="intro" class="clip layer" data-start="0" data-duration="{{INTRO}}" data-track-index="0">
+        <span class="bar"></span>
+        <span class="title">{{TITLE}}</span>
+        <span class="subtitle">{{SUBTITLE}}</span>
+      </div>
+      <!-- /if:intro -->
+
+      <video
+        id="footage"
+        class="clip"
+        data-start="{{FOOTAGE_START}}"
+        data-duration="{{FOOTAGE_DURATION}}"
+        data-track-index="1"
+        src="{{FOOTAGE_SRC}}"
+        {{FOOTAGE_AUDIO}}
+        playsinline
+      ></video>
+
+      <!-- if:lowerThird -->
+      <div id="lower-third" class="clip layer" data-start="{{LT_START}}" data-duration="{{LT_DURATION}}" data-track-index="2">
+        <span class="box">{{CHANNEL}}</span>
+      </div>
+      <!-- /if:lowerThird -->
+
+{{CAPTIONS}}
+
+      <!-- if:outro -->
+      <div id="outro" class="clip layer" data-start="{{OUTRO_START}}" data-duration="{{OUTRO}}" data-track-index="0">
+        <span class="headline">{{OUTRO_TEXT}}</span>
+        <span class="cta">{{OUTRO_CTA}}</span>
+        <span class="channel">{{CHANNEL}}</span>
+      </div>
+      <!-- /if:outro -->
+    </div>
+
+    <script>
+      const T = {{TIMING_JSON}};
+      const has = (sel) => document.querySelector(sel) !== null;
+      const tl = gsap.timeline({ paused: true });
+
+      if (has("#intro")) {
+        tl.from("#intro .bar", { scaleX: 0, transformOrigin: "left center", duration: 0.6, ease: "power3.out" }, 0.2)
+          .from("#intro .title", { y: 40, opacity: 0, duration: 0.8, ease: "power3.out" }, 0.35)
+          .from("#intro .subtitle", { y: 24, opacity: 0, duration: 0.7, ease: "power3.out" }, 0.6)
+          .to("#intro", { opacity: 0, duration: 0.45, ease: "power2.in" }, Math.max(0, T.intro - 0.45));
+      }
+
+      if (has("#lower-third")) {
+        const { start, duration } = T.lowerThird;
+        tl.from("#lower-third .box", { x: -80, opacity: 0, duration: 0.6, ease: "power3.out" }, start)
+          .to("#lower-third .box", { x: -40, opacity: 0, duration: 0.4, ease: "power2.in" }, start + duration - 0.45);
+      }
+
+      document.querySelectorAll(".caption").forEach((cap) => {
+        tl.from(cap.querySelector("span"), { opacity: 0, y: 10, duration: 0.15, ease: "power2.out" }, Number(cap.dataset.start));
+      });
+
+      if (has("#outro")) {
+        tl.from("#outro", { opacity: 0, duration: 0.5 }, T.outroStart)
+          .from("#outro .headline", { y: 30, opacity: 0, duration: 0.7, ease: "power3.out" }, T.outroStart + 0.2)
+          .from("#outro .cta", { y: 20, opacity: 0, duration: 0.6, ease: "power3.out" }, T.outroStart + 0.45)
+          .from("#outro .channel", { opacity: 0, duration: 0.6 }, T.outroStart + 0.7);
+      }
+
+      tl.set({}, {}, T.total);
+      window.__timelines = window.__timelines || {};
+      window.__timelines["main"] = tl;
+      tl.seek(0);
+    </script>
+  </body>
+</html>

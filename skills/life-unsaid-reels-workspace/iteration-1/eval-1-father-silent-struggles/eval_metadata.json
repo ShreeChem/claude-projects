@@ -1,0 +1,15 @@
+{
+  "eval_id": 1,
+  "eval_name": "father-silent-struggles",
+  "prompt": "make a reel script about a father. the story behind his struggles, behind his hardwork, behind his no emotion look, behind his shoulder lot of responsibilities and commitments, planning for the family. give me good 60 sec script using all skills, connectors, plugins",
+  "assertions": [
+    "Hook is 2-3 lines and fits 10-15 seconds",
+    "Full voiceover fits ~60 seconds (English 140-170 words)",
+    "Voiceover ends with 'Follow Life, Unsaid for more'",
+    "Script is split into scenes, each with its own voiceover and a realistic moving-shot visual description",
+    "Offers two hook options",
+    "Includes 2-3 short, script-specific improvement notes",
+    "Avoids generic openers ('Did you know', 'In today's video', 'In a world where')",
+    "Covers the brief: his struggles, hard work, no-emotion face, responsibilities/commitments, and planning for the family"
+  ]
+}

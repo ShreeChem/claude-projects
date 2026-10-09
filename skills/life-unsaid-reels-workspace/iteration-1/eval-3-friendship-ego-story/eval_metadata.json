@@ -1,0 +1,16 @@
+{
+  "eval_id": 3,
+  "eval_name": "friendship-ego-story",
+  "prompt": "me and my college best friend stopped talking 2 years ago after a stupid fight. both of us still watch each other's whatsapp status every single day. stayed in same room without speakin for 1 whole year, feeling frustrated.. nobody texts first. make it about ego and the words we never say. give me good 60 sec script using all skills, connectors, plugins",
+  "assertions": [
+    "Hook is 2-3 lines and fits 10-15 seconds",
+    "Full voiceover fits ~60 seconds (English 140-170 words)",
+    "Voiceover ends with 'Follow Life, Unsaid for more'",
+    "Script is split into scenes, each with its own voiceover and a realistic moving-shot visual description",
+    "Offers two hook options",
+    "Includes 2-3 short, script-specific improvement notes",
+    "Avoids generic openers ('Did you know', 'In today's video', 'In a world where')",
+    "Told in first person and uses the creator's real details (college best friend, a year in the same room without speaking, watching each other's WhatsApp status, nobody texts first)",
+    "Friend stays anonymous (no invented full name)"
+  ]
+}

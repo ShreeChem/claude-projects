@@ -1,0 +1,19 @@
+{
+  "title": "My Video Title",
+  "subtitle": "A short line under the title",
+  "channelName": "Your Name",
+  "outroText": "Thanks for watching",
+  "outroCta": "Subscribe for more",
+  "accentColor": "#7C5CFF",
+  "introSeconds": 4,
+  "outroSeconds": 5,
+  "captions": true,
+  "lowerThird": true,
+  "musicVolume": 0.35,
+  "duckUnderVoice": true,
+  "loudnessLufs": -14,
+  "tellaVideoId": "",
+  "footage": "",
+  "transcript": "",
+  "music": ""
+}

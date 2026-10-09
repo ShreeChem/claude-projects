@@ -1,0 +1,67 @@
+{
+  "title": "It Still Works",
+  "channel": "Life, Unsaid",
+  "handle": "@Life_Unsaid",
+  "tagline": "Life is full of things we feel but never say.",
+  "brandLine": "Follow Life, Unsaid for more.",
+  "accentColor": "#E8C38A",
+  "voiceover": "",
+  "music": "",
+  "musicVolume": 0.22,
+  "duckUnderVoice": true,
+  "loudnessLufs": -14,
+  "wordsPerSecond": 2.6,
+  "tailSeconds": 1.8,
+  "scenes": [
+    {
+      "image": "media/scenes/it-still-works/scene-1.jpg",
+      "move": "in",
+      "focus": [55, 65],
+      "vo": "My father's phone screen has been cracked for three years. Every time I ask him to change it, he says, \"It still works.\" That was never the reason."
+    },
+    {
+      "image": "media/scenes/it-still-works/scene-2.jpg",
+      "move": "in",
+      "focus": [60, 65],
+      "vo": "He types slowly now, his thumb skipping the broken corner."
+    },
+    {
+      "image": "media/scenes/it-still-works/scene-3.jpg",
+      "move": "left",
+      "vo": "Last month, I saw him at a phone shop. He picked up a new one, checked the price… and put it back."
+    },
+    {
+      "image": "media/scenes/it-still-works/scene-4.jpg",
+      "move": "in",
+      "focus": [50, 30],
+      "vo": "That same week, my college fees were paid. On time. Like always. He never told me how."
+    },
+    {
+      "image": "media/scenes/it-still-works/scene-5.jpg",
+      "move": "right",
+      "vo": "Fathers like him don't say, \"I love you.\" They say, \"Have you eaten?\" \"Message me when you reach.\" \"It still works.\" Different words. Same meaning."
+    },
+    {
+      "image": "media/scenes/it-still-works/scene-3.jpg",
+      "draft": "Stand-in until the real Scene 6 (note on the bedside table) is made",
+      "move": "in",
+      "focus": [58, 72],
+      "zoom": 2.1,
+      "vo": "So this time, I didn't ask. I saved for four months. I left a new phone on his table, with a note: \"Now it's my turn, Papa.\""
+    },
+    {
+      "image": "media/scenes/it-still-works/scene-4.jpg",
+      "draft": "Stand-in until the real Scene 7 (father holding the box) is made",
+      "move": "in",
+      "focus": [52, 24],
+      "zoom": 1.9,
+      "vo": "He didn't say a word. He just held it… a little longer."
+    },
+    {
+      "image": "media/scenes/it-still-works/scene-2.jpg",
+      "draft": "Stand-in until the real Scene 8 (balcony ending) is made",
+      "move": "out",
+      "vo": "Send this to your father. He won't reply, but he'll read it. Follow Life, Unsaid for more."
+    }
+  ]
+}

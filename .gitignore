@@ -1,0 +1,11 @@
+# Dependencies, builds and secrets — each project's own .gitignore adds more.
+node_modules/
+.env
+.env.*
+!.env.example
+*.log
+.DS_Store
+Thumbs.db
+
+# Personal images — kept on this PC only
+social-resize/*.jpg
