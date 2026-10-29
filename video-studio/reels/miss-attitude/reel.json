@@ -1,0 +1,52 @@
+{
+  "title": "Miss Attitude",
+  "channel": "Life, Unsaid",
+  "handle": "@Life_Unsaid",
+  "tagline": "Life is full of things we feel but never say.",
+  "brandLine": "Follow Life, Unsaid for more.",
+  "accentColor": "#E8C38A",
+  "voiceover": "",
+  "music": "media/music/Hazelwood - Coming Of Age (freetouse.com).mp3",
+  "musicVolume": 0.22,
+  "duckUnderVoice": true,
+  "loudnessLufs": -14,
+  "wordsPerSecond": 2.6,
+  "tailSeconds": 1.8,
+  "scenes": [
+    {
+      "image": "media/scenes/miss-attitude/scene-1.jpg",
+      "move": "in",
+      "vo": "In our office, we had a name for her. \"Miss Attitude.\" She never smiled. Never came for lunch. For one year, we were sure we knew her."
+    },
+    {
+      "image": "media/scenes/miss-attitude/scene-2.jpg",
+      "move": "right",
+      "vo": "Every day at one o'clock, all of us went down for lunch. Pizza, biryani. We'd ask her once. She'd say, \"You guys go.\""
+    },
+    {
+      "image": "media/scenes/miss-attitude/scene-3.jpg",
+      "move": "left",
+      "vo": "So we stopped asking. Someone said she thinks she's better than us. We laughed. I laughed too."
+    },
+    {
+      "image": "media/scenes/miss-attitude/scene-4.jpg",
+      "move": "in",
+      "vo": "Then one day, I went back up for my phone. The floor was empty. Except her."
+    },
+    {
+      "image": "media/scenes/miss-attitude/scene-5.jpg",
+      "move": "in",
+      "vo": "She was in the pantry corner, eating two dry rotis from a steel tiffin. Phone on her ear. \"Haan Papa, I'll send the dialysis money on Friday. Don't worry.\""
+    },
+    {
+      "image": "media/scenes/miss-attitude/scene-6.jpg",
+      "move": "out",
+      "vo": "She saw me. Smiled, for the first time. \"Please don't tell anyone.\" That's when I understood. She was never rude. She was just carrying something none of us could see."
+    },
+    {
+      "image": "media/scenes/miss-attitude/scene-7.jpg",
+      "move": "in",
+      "vo": "Next time someone stays quiet, don't give them a name. Ask once more. Follow Life, Unsaid for more."
+    }
+  ]
+}

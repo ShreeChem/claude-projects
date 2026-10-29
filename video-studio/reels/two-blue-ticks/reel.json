@@ -1,0 +1,76 @@
+{
+  "title": "Two Blue Ticks",
+  "channel": "Life, Unsaid",
+  "handle": "@Life_Unsaid",
+  "tagline": "Life is full of things we feel but never say.",
+  "brandLine": "Follow Life, Unsaid for more.",
+  "accentColor": "#E8C38A",
+  "voiceover": "",
+  "music": "",
+  "musicVolume": 0.22,
+  "duckUnderVoice": true,
+  "loudnessLufs": -14,
+  "wordsPerSecond": 2.6,
+  "tailSeconds": 1.8,
+  "scenes": [
+    {
+      "image": "media/scenes/two-blue-ticks/scene-1.jpg",
+      "move": "in",
+      "vo": "Every morning at 6:40, my mother sends me a Good Morning picture. Flowers. A sunrise. Glitter everywhere. For two years… I never replied. Not once."
+    },
+    {
+      "image": "media/scenes/two-blue-ticks/scene-2.jpg",
+      "move": "right",
+      "vo": "She learned WhatsApp late. My brother had to teach her twice. Then the pictures started. A rose. A temple. \"Have a blessed day\" in gold letters."
+    },
+    {
+      "image": "media/scenes/two-blue-ticks/scene-3.jpg",
+      "move": "left",
+      "vo": "I'd see them on my way to office, think, \"Not again, Mummy,\" and swipe them away."
+    },
+    {
+      "image": "media/scenes/two-blue-ticks/scene-1.jpg",
+      "move": "in",
+      "vo": "Then one winter, I got a high fever. I didn't tell anyone. That morning, her picture came at 6:40, like always. I didn't open it.",
+      "draft": "Stand-in until the real Scene 4 (daughter sick in bed) is made",
+      "focus": [
+        45,
+        78
+      ],
+      "zoom": 1.8
+    },
+    {
+      "image": "media/scenes/two-blue-ticks/scene-2.jpg",
+      "move": "in",
+      "vo": "At 7:15, my phone rang. Her voice was shaking. \"Your ticks are still grey. Are you okay?\"",
+      "draft": "Stand-in until the real Scene 5 (mother worried on call, tea boiling over) is made",
+      "focus": [
+        45,
+        28
+      ],
+      "zoom": 2
+    },
+    {
+      "image": "media/scenes/two-blue-ticks/scene-1.jpg",
+      "move": "in",
+      "vo": "That's when I understood. She never wanted a reply. She just wanted two blue ticks… to know I woke up. That I'm fine. That I'm still there.",
+      "draft": "Stand-in until the real Scene 6 (ticks turn blue / mother relieved) is made",
+      "focus": [
+        50,
+        78
+      ],
+      "zoom": 2.6
+    },
+    {
+      "image": "media/scenes/two-blue-ticks/scene-3.jpg",
+      "move": "out",
+      "vo": "Open your mother's good morning today. And reply, just once. Follow Life, Unsaid for more.",
+      "draft": "Stand-in until the real Scene 7 (daughter replying in sunlit bed) is made",
+      "focus": [
+        38,
+        40
+      ],
+      "zoom": 1.5
+    }
+  ]
+}
